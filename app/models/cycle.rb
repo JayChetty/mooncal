@@ -31,7 +31,6 @@ class Cycle
   end 
 
   def day_of_cycle(point_in_time)
-    puts "pot #{point_in_time}"
     adjusted_time = point_in_time - first_day_start_of_cycle(point_in_time)    
     (adjusted_time/DAY_IN_SECONDS).ceil
   end 

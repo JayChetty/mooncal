@@ -56,11 +56,4 @@ describe Cycle do
     cycle = Cycle.new(anchor,60*60*24*1000) #1000 days
     cycle.day_of_cycle(point).should == 0
   end
-
-  it "should return zero when not hit first day " do
-    anchor = Time.new(2012,12,21,11,12)
-    point = Time.new(2012,12,21,12,00)
-    cycle = Cycle.new(anchor,60*60*24*1000) #1000 days
-    cycle.day_of_cycle(point).should == 0
-  end   
 end
